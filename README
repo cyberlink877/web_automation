@@ -1,0 +1,17 @@
+Prerequisite for installing python 2.7 and other related version as follows:
+selenium==3.141.0
+urllib3==1.26.3
+xlrd==2.0.1
+a) easy_install pip
+b) pip install python
+Preparation of package before running the project
+1) pip install selenium
+2) Check the drivers ready in the folder driver for chrome, otherwise please download one and place in the folder as follows:
+https://sites.google.com/a/chromium.org/chromedriver/downloads
+For running the project, 
+pip install virtualenv
+virtualenv -p /usr/bin/python2.7 venv
+pip install -r requirements.txt
+source ./venv/bin/activate
+python run.py 
+ 

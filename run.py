@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import unittest
 from io import StringIO
-from HTMLTestRunner import runner
+from HtmlTestRunner import runner
 #add the HTMLTestRunner to site-package for the python installation, i.e. /Library/Python/2.7/site-packages 
 
 

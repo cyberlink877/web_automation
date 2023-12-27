@@ -15,6 +15,6 @@ def get_test_cases(dirpath):
 if __name__ == '__main__':
     cases = get_test_cases('testcases')
     f = open(r'report/testReport.html', 'wb')
-    runner = runner.HTMLTestRunner(stream=f, title=u'Crypto NFT Web Test Report', description=u'Test results:')
+    runner = HTMLTestRunner(stream=f, title=u'Crypto NFT Web Test Report', description=u'Test results:')
     runner.run(cases)
     f.close()

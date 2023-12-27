@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import unittest
 from io import StringIO
-import HTMLTestRunner 
+from HTMLTestRunner import runner
 #add the HTMLTestRunner to site-package for the python installation, i.e. /Library/Python/2.7/site-packages 
 
 
@@ -15,6 +15,6 @@ def get_test_cases(dirpath):
 if __name__ == '__main__':
     cases = get_test_cases('testcases')
     f = open(r'report/testReport.html', 'wb')
-    runner = HTMLTestRunner.HTMLTestRunner(stream=f, title=u'Crypto NFT Web Test Report', description=u'Test results:')
+    runner = runner.HTMLTestRunner(stream=f, title=u'Crypto NFT Web Test Report', description=u'Test results:')
     runner.run(cases)
     f.close()
